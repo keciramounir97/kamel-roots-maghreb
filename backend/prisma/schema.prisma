@@ -1,0 +1,144 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x", "debian-openssl-3.0.x", "rhel-openssl-1.0.x", "linux-musl"]
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           Int       @id @default(autoincrement())
+  fullName     String?   @map("full_name")
+  phoneNumber  String?   @map("phone_number")
+  email        String    @unique
+  password     String
+  roleId       Int       @map("role_id")
+  status       String    @default("active")
+  sessionToken String?   @map("session_token")
+  lastLogin    DateTime? @map("last_login")
+  createdAt    DateTime? @default(now()) @map("created_at")
+  updatedAt    DateTime? @updatedAt @map("updated_at")
+
+  role   Role?          @relation(fields: [roleId], references: [id])
+  books  Book[]         @relation("BookUploadedBy")
+  trees  FamilyTree[]
+  logs   ActivityLog[]  @relation("UserLogs")
+  gallery Gallery[]     @relation("GalleryUploadedBy")
+
+  @@map("users")
+}
+
+model Role {
+  id          Int    @id
+  name        String @unique
+  permissions String?
+
+  users User[]
+
+  @@map("roles")
+}
+
+model ActivityLog {
+  id          Int       @id @default(autoincrement())
+  actorUserId Int?      @map("actor_user_id")
+  type        String
+  description String
+  createdAt   DateTime? @default(now()) @map("created_at")
+
+  actor User? @relation("UserLogs", fields: [actorUserId], references: [id])
+
+  @@map("activity_logs")
+}
+
+model AppSetting {
+  key       String   @id @map("key")
+  value     String
+  updatedAt DateTime @updatedAt @default(now()) @map("updated_at")
+
+  @@map("app_settings")
+}
+
+model PasswordReset {
+  email     String   @id
+  codeHash  String   @map("code_hash")
+  expiresAt DateTime @map("expires_at")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("password_resets")
+}
+
+model Book {
+  id            Int       @id @default(autoincrement())
+  title         String
+  author        String?
+  description   String?
+  category      String?
+  filePath      String    @map("file_path")
+  coverPath     String?   @map("cover_path")
+  fileSize      BigInt?   @map("file_size")
+  uploadedBy    Int?      @map("uploaded_by")
+  isPublic      Boolean   @default(false) @map("is_public")
+  downloadCount Int       @default(0) @map("download_count")
+  createdAt     DateTime? @default(now()) @map("created_at")
+
+  uploader User? @relation("BookUploadedBy", fields: [uploadedBy], references: [id])
+
+  @@index([isPublic, createdAt])
+  @@index([uploadedBy])
+  @@map("books")
+}
+
+model FamilyTree {
+  id            Int       @id @default(autoincrement())
+  userId        Int?      @map("user_id")
+  title         String
+  description   String?
+  gedcomPath    String?   @map("gedcom_path")
+  archiveSource String?   @map("archive_source")
+  documentCode  String?   @map("document_code")
+  isPublic      Boolean   @default(false) @map("is_public")
+  createdAt     DateTime? @default(now()) @map("created_at")
+  updatedAt     DateTime? @updatedAt @default(now()) @map("updated_at")
+
+  owner  User?    @relation(fields: [userId], references: [id])
+  people Person[]
+
+  @@index([isPublic, createdAt])
+  @@index([userId])
+  @@map("family_trees")
+}
+
+// Minimal mapping used for counts only
+model Person {
+  id     Int       @id @default(autoincrement())
+  treeId Int?      @map("tree_id")
+  name   String?   @map("name")
+  tree   FamilyTree? @relation(fields: [treeId], references: [id])
+
+  @@index([treeId])
+  @@map("persons")
+}
+
+model Gallery {
+  id            Int       @id @default(autoincrement())
+  title         String
+  description   String?   @db.Text
+  imagePath     String    @map("image_path")
+  uploadedBy    Int?      @map("uploaded_by")
+  isPublic      Boolean   @default(true) @map("is_public")
+  archiveSource String?   @map("archive_source")
+  documentCode  String?   @map("document_code")
+  location      String?
+  year          String?
+  photographer  String?
+  createdAt     DateTime? @default(now()) @map("created_at")
+  updatedAt     DateTime? @updatedAt @default(now()) @map("updated_at")
+
+  uploader User? @relation("GalleryUploadedBy", fields: [uploadedBy], references: [id])
+
+  @@index([isPublic, createdAt])
+  @@index([uploadedBy])
+  @@map("gallery")
+}

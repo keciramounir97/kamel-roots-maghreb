@@ -1,0 +1,580 @@
+0 HEAD
+1 SOUR RootsMaghreb
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Osman /Gazi/
+1 GIVN Osman
+1 SURN Gazi
+1 SEX M
+1 BIRT
+2 DATE 1258
+1 DEAT
+2 DATE 1323
+1 NOTE Founder of the Ottoman Dynasty. Established the Ottoman principality.
+1 OCCU Sultan of the Ottoman Beylik
+1 _COLOR #8b4513
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Orhan /Gazi/
+1 GIVN Orhan
+1 SURN Gazi
+1 SEX M
+1 BIRT
+2 DATE 1281
+1 DEAT
+2 DATE 1362
+1 NOTE Second ruler of the Ottoman Empire. Conquered Bursa and made it the capital.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #654321
+1 FAMC @F1@
+1 FAMS @F2@
+0 @I3@ INDI
+1 NAME Murad /I/
+1 GIVN Murad
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1326
+1 DEAT
+2 DATE 1389
+1 NOTE Third Sultan. Expanded Ottoman territories into Europe. Died at the Battle of Kosovo.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #8b7355
+1 FAMC @F2@
+1 FAMS @F3@
+0 @I4@ INDI
+1 NAME Bayezid /I/
+1 GIVN Bayezid
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1360
+1 DEAT
+2 DATE 1403
+1 NOTE Known as "Yıldırım" (The Thunderbolt). Defeated by Timur at Ankara.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #6b5d4f
+1 FAMC @F3@
+1 FAMS @F4@
+0 @I5@ INDI
+1 NAME Mehmed /I/
+1 GIVN Mehmed
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1389
+1 DEAT
+2 DATE 1421
+1 NOTE Restored Ottoman power after the interregnum following Bayezid I's defeat.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #7a6855
+1 FAMC @F4@
+1 FAMS @F5@
+0 @I6@ INDI
+1 NAME Murad /II/
+1 GIVN Murad
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1404
+1 DEAT
+2 DATE 1451
+1 NOTE Abdicated twice but returned to power. Father of Mehmed the Conqueror.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #8b7d6b
+1 FAMC @F5@
+1 FAMS @F6@
+0 @I7@ INDI
+1 NAME Mehmed /II/
+1 GIVN Mehmed
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1432
+1 DEAT
+2 DATE 1481
+1 NOTE Known as "Fatih" (The Conqueror). Conquered Constantinople in 1453.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #9b7653
+1 FAMC @F6@
+1 FAMS @F7@
+0 @I8@ INDI
+1 NAME Bayezid /II/
+1 GIVN Bayezid
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1447
+1 DEAT
+2 DATE 1512
+1 NOTE Known for his piety and patronage of arts. Built many mosques and religious schools.
+1 OCCU Sultan of the Ottoman Empire
+1 _COLOR #8b6f47
+1 FAMC @F7@
+1 FAMS @F8@
+0 @I9@ INDI
+1 NAME Selim /I/
+1 GIVN Selim
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1470
+1 DEAT
+2 DATE 1520
+1 NOTE Known as "Yavuz" (The Grim). Conquered Egypt and claimed the Caliphate title.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #7a5d3f
+1 FAMC @F8@
+1 FAMS @F9@
+0 @I10@ INDI
+1 NAME Suleiman /I/
+1 GIVN Suleiman
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1494
+1 DEAT
+2 DATE 1566
+1 NOTE Known as "The Magnificent" in the West and "The Lawgiver" (Kanuni) in Turkey. Golden Age of the Ottoman Empire.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #d4a574
+1 FAMC @F9@
+1 FAMS @F10@
+0 @I11@ INDI
+1 NAME Selim /II/
+1 GIVN Selim
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1524
+1 DEAT
+2 DATE 1574
+1 NOTE Son of Suleiman the Magnificent. Patron of arts and architecture.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #c9a567
+1 FAMC @F10@
+1 FAMS @F11@
+0 @I12@ INDI
+1 NAME Murad /III/
+1 GIVN Murad
+1 SURN III
+1 SEX M
+1 BIRT
+2 DATE 1546
+1 DEAT
+2 DATE 1595
+1 NOTE Long reign marked by conflicts with Persia and expansion in the Caucasus.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #b8956f
+1 FAMC @F11@
+1 FAMS @F12@
+0 @I13@ INDI
+1 NAME Mehmed /III/
+1 GIVN Mehmed
+1 SURN III
+1 SEX M
+1 BIRT
+2 DATE 1566
+1 DEAT
+2 DATE 1603
+1 NOTE Notorious for fratricide, executing 19 brothers upon accession.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #a68760
+1 FAMC @F12@
+1 FAMS @F13@
+0 @I14@ INDI
+1 NAME Ahmed /I/
+1 GIVN Ahmed
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1590
+1 DEAT
+2 DATE 1617
+1 NOTE Builder of the Blue Mosque. Ended the practice of fratricide.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #9b7a5a
+1 FAMC @F13@
+1 FAMS @F14@
+0 @I15@ INDI
+1 NAME Mustafa /I/
+1 GIVN Mustafa
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1591
+1 DEAT
+2 DATE 1639
+1 NOTE Deposed twice due to mental illness. First sultan to be deposed and restored.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #8b6c4d
+1 FAMC @F13@
+0 @I16@ INDI
+1 NAME Osman /II/
+1 GIVN Osman
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1604
+1 DEAT
+2 DATE 1622
+1 NOTE The Young Osman. Attempted military reforms, assassinated by Janissaries.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #7a5e3f
+1 FAMC @F14@
+0 @I17@ INDI
+1 NAME Murad /IV/
+1 GIVN Murad
+1 SURN IV
+1 SEX M
+1 BIRT
+2 DATE 1612
+1 DEAT
+2 DATE 1640
+1 NOTE One of the most powerful sultans. Recaptured Baghdad from Persia. Known for stern rule.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #9b7555
+1 FAMC @F14@
+0 @I18@ INDI
+1 NAME Ibrahim /I/
+1 GIVN Ibrahim
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1615
+1 DEAT
+2 DATE 1648
+1 NOTE Known as Ibrahim the Mad. Deposed and executed due to mental instability.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #876749
+1 FAMC @F14@
+1 FAMS @F15@
+0 @I19@ INDI
+1 NAME Mehmed /IV/
+1 GIVN Mehmed
+1 SURN IV
+1 SEX M
+1 BIRT
+2 DATE 1642
+1 DEAT
+2 DATE 1693
+1 NOTE Longest reigning sultan. Known as "The Hunter". Reign saw both expansion and setbacks.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #a68965
+1 FAMC @F15@
+1 FAMS @F16@
+0 @I20@ INDI
+1 NAME Suleiman /II/
+1 GIVN Suleiman
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1642
+1 DEAT
+2 DATE 1691
+1 NOTE Brother of Mehmed IV. Brief reign during military crises.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #9576 56
+1 FAMC @F15@
+0 @I21@ INDI
+1 NAME Ahmed /II/
+1 GIVN Ahmed
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1643
+1 DEAT
+2 DATE 1695
+1 NOTE Short reign. Continued wars with Holy League.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #8b7350
+1 FAMC @F15@
+0 @I22@ INDI
+1 NAME Mustafa /II/
+1 GIVN Mustafa
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1664
+1 DEAT
+2 DATE 1703
+1 NOTE Attempted to restore military glory but was forced to abdicate.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #a0865f
+1 FAMC @F16@
+0 @I23@ INDI
+1 NAME Ahmed /III/
+1 GIVN Ahmed
+1 SURN III
+1 SEX M
+1 BIRT
+2 DATE 1673
+1 DEAT
+2 DATE 1736
+1 NOTE The Tulip Era. Period of peace, cultural renaissance, and Western influence.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #d4b078
+1 FAMC @F16@
+0 @I24@ INDI
+1 NAME Mahmud /I/
+1 GIVN Mahmud
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1696
+1 DEAT
+2 DATE 1754
+1 NOTE Stable reign. Built many libraries and fountains.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #b89a6e
+1 FAMC @F16@
+0 @I25@ INDI
+1 NAME Osman /III/
+1 GIVN Osman
+1 SURN III
+1 SEX M
+1 BIRT
+2 DATE 1699
+1 DEAT
+2 DATE 1757
+1 NOTE Short reign of three years. Conservative and pious.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #9b8160
+1 FAMC @F16@
+0 @I26@ INDI
+1 NAME Mustafa /III/
+1 GIVN Mustafa
+1 SURN III
+1 SEX M
+1 BIRT
+2 DATE 1717
+1 DEAT
+2 DATE 1774
+1 NOTE Attempted modernization, especially of the military. Faced defeats by Russia.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #a78f6a
+1 FAMC @F16@
+1 FAMS @F17@
+0 @I27@ INDI
+1 NAME Abdul Hamid /I/
+1 GIVN Abdul Hamid
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1725
+1 DEAT
+2 DATE 1789
+1 NOTE Continued military reforms. Lost territory to Russia and Austria.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #8c7456
+1 FAMC @F17@
+0 @I28@ INDI
+1 NAME Selim /III/
+1 GIVN Selim
+1 SURN III
+1 SEX M
+1 BIRT
+2 DATE 1761
+1 DEAT
+2 DATE 1808
+1 NOTE Major reformer. Created Nizam-ı Cedid (New Order) army. Deposed and assassinated.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #b59872
+1 FAMC @F17@
+0 @I29@ INDI
+1 NAME Mustafa /IV/
+1 GIVN Mustafa
+1 SURN IV
+1 SEX M
+1 BIRT
+2 DATE 1779
+1 DEAT
+2 DATE 1808
+1 NOTE Brief reign. Deposed after ordering Selim III's assassination.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #95765c
+1 FAMC @F17@
+0 @I30@ INDI
+1 NAME Mahmud /II/
+1 GIVN Mahmud
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1785
+1 DEAT
+2 DATE 1839
+1 NOTE "Napoleon of the East". Abolished the Janissaries. Major modernization reforms (Tanzimat).
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #c4a87b
+1 FAMC @F17@
+1 FAMS @F18@
+0 @I31@ INDI
+1 NAME Abdulmecid /I/
+1 GIVN Abdulmecid
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1823
+1 DEAT
+2 DATE 1861
+1 NOTE Tanzimat era. Westernization and modernization. Built Dolmabahçe Palace.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #d4b584
+1 FAMC @F18@
+1 FAMS @F19@
+0 @I32@ INDI
+1 NAME Abdulaziz /I/
+1 GIVN Abdulaziz
+1 SURN I
+1 SEX M
+1 BIRT
+2 DATE 1830
+1 DEAT
+2 DATE 1876
+1 NOTE First sultan to travel to Western Europe. Deposed in 1876, died under mysterious circumstances.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #b89f75
+1 FAMC @F18@
+0 @I33@ INDI
+1 NAME Murad /V/
+1 GIVN Murad
+1 SURN V
+1 SEX M
+1 BIRT
+2 DATE 1840
+1 DEAT
+2 DATE 1904
+1 NOTE Shortest reigning sultan - only 93 days. Deposed due to mental illness.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #9d8567
+1 FAMC @F19@
+0 @I34@ INDI
+1 NAME Abdul Hamid /II/
+1 GIVN Abdul Hamid
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1842
+1 DEAT
+2 DATE 1918
+1 NOTE "The Red Sultan". Longest reigning sultan (33 years). Suspended Constitution. Built Hejaz Railway.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #aa8f6c
+1 FAMC @F19@
+0 @I35@ INDI
+1 NAME Mehmed /V/
+1 GIVN Mehmed
+1 SURN V
+1 SEX M
+1 BIRT
+2 DATE 1844
+1 DEAT
+2 DATE 1918
+1 NOTE Constitutional monarch after Young Turk Revolution. Reigned during World War I.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #b79771
+1 FAMC @F19@
+0 @I36@ INDI
+1 NAME Mehmed /VI/
+1 GIVN Mehmed
+1 SURN VI
+1 SEX M
+1 BIRT
+2 DATE 1861
+1 DEAT
+2 DATE 1926
+1 NOTE Last Sultan of the Ottoman Empire. Fled after Turkish War of Independence.
+1 OCCU Sultan of the Ottoman Empire, Caliph
+1 _COLOR #c5a67d
+1 FAMC @F19@
+0 @I37@ INDI
+1 NAME Abdulmecid /II/
+1 GIVN Abdulmecid
+1 SURN II
+1 SEX M
+1 BIRT
+2 DATE 1868
+1 DEAT
+2 DATE 1944
+1 NOTE Last Caliph. Held only spiritual authority, no political power. Exiled in 1924.
+1 OCCU Caliph (titular)
+1 _COLOR #d4ae85
+1 FAMC @F19@
+0 @F1@ FAM
+1 HUSB @I1@
+1 CHIL @I2@
+0 @F2@ FAM
+1 HUSB @I2@
+1 CHIL @I3@
+0 @F3@ FAM
+1 HUSB @I3@
+1 CHIL @I4@
+0 @F4@ FAM
+1 HUSB @I4@
+1 CHIL @I5@
+0 @F5@ FAM
+1 HUSB @I5@
+1 CHIL @I6@
+0 @F6@ FAM
+1 HUSB @I6@
+1 CHIL @I7@
+0 @F7@ FAM
+1 HUSB @I7@
+1 CHIL @I8@
+0 @F8@ FAM
+1 HUSB @I8@
+1 CHIL @I9@
+0 @F9@ FAM
+1 HUSB @I9@
+1 CHIL @I10@
+0 @F10@ FAM
+1 HUSB @I10@
+1 CHIL @I11@
+0 @F11@ FAM
+1 HUSB @I11@
+1 CHIL @I12@
+0 @F12@ FAM
+1 HUSB @I12@
+1 CHIL @I13@
+0 @F13@ FAM
+1 HUSB @I13@
+1 CHIL @I14@
+1 CHIL @I15@
+0 @F14@ FAM
+1 HUSB @I14@
+1 CHIL @I16@
+1 CHIL @I17@
+1 CHIL @I18@
+0 @F15@ FAM
+1 HUSB @I18@
+1 CHIL @I19@
+1 CHIL @I20@
+1 CHIL @I21@
+0 @F16@ FAM
+1 HUSB @I19@
+1 CHIL @I22@
+1 CHIL @I23@
+1 CHIL @I24@
+1 CHIL @I25@
+1 CHIL @I26@
+0 @F17@ FAM
+1 HUSB @I26@
+1 CHIL @I27@
+1 CHIL @I28@
+1 CHIL @I29@
+1 CHIL @I30@
+0 @F18@ FAM
+1 HUSB @I30@
+1 CHIL @I31@
+1 CHIL @I32@
+0 @F19@ FAM
+1 HUSB @I31@
+1 CHIL @I33@
+1 CHIL @I34@
+1 CHIL @I35@
+1 CHIL @I36@
+1 CHIL @I37@
+0 TRLR

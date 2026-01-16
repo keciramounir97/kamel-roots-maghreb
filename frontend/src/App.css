@@ -1,0 +1,264 @@
+.heritage-header {
+  background: var(--leather-brown);
+  border-bottom: 3px solid var(--accent-gold);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.heritage-header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.8rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heritage-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: "Cinzel", serif;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-size: 1.25rem;
+}
+
+.heritage-logo span {
+  color: var(--dark-beige);
+  letter-spacing: 0.35em;
+  font-size: 0.7rem;
+}
+
+.heritage-nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.heritage-nav a {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.5px;
+  color: var(--dark-beige);
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color var(--transition);
+  position: relative;
+}
+
+.heritage-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: var(--accent-gold);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform var(--transition);
+}
+
+.heritage-nav a:hover,
+.heritage-nav a.active {
+  color: #fff;
+}
+
+.heritage-nav a:hover::after,
+.heritage-nav a.active::after {
+  transform: scaleX(1);
+}
+
+.heritage-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.heritage-btn {
+  background: linear-gradient(135deg, #d4af37, #f3e5a9);
+  color: #2c1810;
+  border-radius: 999px;
+  padding: 0.65rem 1.8rem;
+  letter-spacing: 0.35em;
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.heritage-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--accent-gold);
+  font-size: 1.5rem;
+}
+
+.heritage-mobile-menu {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heritage-mobile-menu-inner {
+  width: 280px;
+  background: var(--leather-brown);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heritage-mobile-menu-inner nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.heritage-mobile-menu-inner nav a {
+  font-family: "Cinzel", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--accent-gold);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.heritage-footer {
+  background: var(--leather-brown);
+  color: var(--dark-beige);
+  padding: 80px 0 40px;
+  border-top: 5px solid var(--accent-gold);
+  position: relative;
+  overflow: hidden;
+}
+
+.heritage-footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1400&q=80")
+    center/cover;
+  opacity: 0.12;
+  z-index: 0;
+}
+
+.heritage-footer-grid {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 50px;
+  z-index: 1;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.heritage-footer-column h3 {
+  font-family: "Cinzel", serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-gold);
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.heritage-footer-column h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 60px;
+  background: var(--accent-gold);
+}
+
+.heritage-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.heritage-footer-links li {
+  margin-bottom: 0.7rem;
+}
+
+.heritage-footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.heritage-footer-links a:hover {
+  color: var(--accent-gold);
+}
+
+.heritage-social-links {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.heritage-social-links a {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.heritage-footer-meta {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(212, 175, 55, 0.2);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .heritage-nav {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heritage-nav {
+    display: none;
+  }
+
+  .heritage-mobile-toggle {
+    display: inline-block;
+  }
+
+  .heritage-action-group {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .heritage-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

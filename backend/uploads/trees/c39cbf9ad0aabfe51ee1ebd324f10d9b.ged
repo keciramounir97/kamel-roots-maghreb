@@ -1,0 +1,65 @@
+0 HEAD
+1 SOUR RootsMaghreb
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Ahmed /Benali/
+1 GIVN Ahmed
+1 SURN Benali
+1 SEX M
+1 BIRT
+2 DATE 1965
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Fatima /Zahra/
+1 GIVN Fatima
+1 SURN Zahra
+1 SEX F
+1 BIRT
+2 DATE 1968
+1 FAMS @F1@
+0 @I3@ INDI
+1 NAME Youssef /Benali/
+1 GIVN Youssef
+1 SURN Benali
+1 SEX M
+1 BIRT
+2 DATE 1990
+1 FAMC @F1@
+1 FAMS @F2@
+0 @I4@ INDI
+1 NAME Amina /Benali/
+1 GIVN Amina
+1 SURN Benali
+1 SEX F
+1 BIRT
+2 DATE 1993
+1 FAMC @F1@
+0 @I5@ INDI
+1 NAME Sara /Mokdad/
+1 GIVN Sara
+1 SURN Mokdad
+1 SEX F
+1 BIRT
+2 DATE 1992
+1 FAMS @F2@
+0 @I6@ INDI
+1 NAME Adam /Benali/
+1 GIVN Adam
+1 SURN Benali
+1 SEX M
+1 BIRT
+2 DATE 2018
+1 FAMC @F2@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+1 CHIL @I4@
+0 @F2@ FAM
+1 HUSB @I3@
+1 WIFE @I5@
+1 CHIL @I6@
+0 TRLR

@@ -1,0 +1,142 @@
+0 HEAD
+1 SOUR RootsMaghreb
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+0 @I1@ INDI
+1 NAME Abdelkader ben Mohammed ben Slimane ben /Bouzid/
+1 SEX M
+1 BIRT
+2 DATE 1533
+1 FAMC @F6@
+1 FAMS @F1@
+1 FAMS @F4@
+1 FAMS @F7@
+0 @I2@ INDI
+1 NAME Bouzid ben Abdelkader /Ghraba/
+1 SEX M
+1 BIRT
+2 DATE 1560
+1 FAMC @F4@
+1 FAMS @F2@
+0 @I3@ INDI
+1 NAME M'Hamed ben Abdelkader /Cheraga/
+1 SEX M
+1 BIRT
+2 DATE 1565
+1 FAMC @F4@
+1 FAMS @F3@
+0 @I4@ INDI
+1 NAME Taleb ben Abdelkader /Tolba/
+1 SEX M
+1 BIRT
+2 DATE 1570
+1 FAMC @F4@
+0 @I5@ INDI
+1 NAME Brahim ben Bouzid /Ghraba/
+1 SEX M
+1 BIRT
+2 DATE 1590
+1 FAMC @F2@
+0 @I6@ INDI
+1 NAME Aïssa ben Bouzid /Ghraba/
+1 SEX M
+1 BIRT
+2 DATE 1595
+1 FAMC @F2@
+0 @I7@ INDI
+1 NAME Amar ben Bouzid /Ghraba/
+1 SEX M
+1 BIRT
+2 DATE 1600
+1 FAMC @F2@
+0 @I8@ INDI
+1 NAME Ahmed El Hadj ben M'Hamed /Cheraga/
+1 SEX M
+1 BIRT
+2 DATE 1595
+1 FAMC @F3@
+0 @I9@ INDI
+1 NAME Ali ben M'Hamed /Cheraga/
+1 SEX M
+1 BIRT
+2 DATE 1600
+1 FAMC @F3@
+0 @I10@ INDI
+1 NAME M'Hamed ben M'Hamed /Cheraga/
+1 SEX M
+1 BIRT
+2 DATE 1605
+1 FAMC @F3@
+0 @I11@ INDI
+1 NAME Slimane ben Hamza ben Ahmed /Ghraba/
+1 SEX M
+1 BIRT
+2 DATE 1820
+0 @I12@ INDI
+1 NAME M'Hamed ben Larbi ben Tayeb /Cheraga/
+1 SEX M
+1 BIRT
+2 DATE 1830
+0 @I13@ INDI
+1 NAME ///
+1 SEX F
+1 BIRT
+2 DATE 1540
+1 FAMS @F1@
+1 FAMS @F4@
+1 FAMS @F7@
+0 @I14@ INDI
+1 NAME Mohammed ben Slimane ben /Bouzid/
+1 SEX M
+1 BIRT
+2 DATE 1500
+1 FAMS @F5@
+1 FAMS @F6@
+1 FAMS @F8@
+0 @I15@ INDI
+1 NAME ///
+1 SEX F
+1 BIRT
+2 DATE 1510
+1 FAMS @F5@
+1 FAMS @F6@
+1 FAMS @F8@
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I13@
+1 CHIL @I2@
+1 CHIL @I3@
+1 CHIL @I4@
+0 @F2@ FAM
+1 HUSB @I2@
+1 CHIL @I5@
+1 CHIL @I6@
+1 CHIL @I7@
+0 @F3@ FAM
+1 HUSB @I3@
+1 CHIL @I8@
+1 CHIL @I9@
+1 CHIL @I10@
+0 @F4@ FAM
+1 HUSB @I13@
+1 WIFE @I1@
+1 CHIL @I2@
+1 CHIL @I3@
+1 CHIL @I4@
+0 @F5@ FAM
+1 HUSB @I14@
+1 WIFE @I15@
+1 CHIL @I1@
+0 @F6@ FAM
+1 HUSB @I15@
+1 WIFE @I14@
+1 CHIL @I1@
+0 @F7@ FAM
+1 HUSB @I1@
+1 WIFE @I13@
+0 @F8@ FAM
+1 HUSB @I14@
+1 WIFE @I15@
+0 TRLR
