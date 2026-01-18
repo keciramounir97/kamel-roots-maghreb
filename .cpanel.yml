@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    # Navigate to backend directory and install dependencies
+    - export DEPLOYPATH=/home/$USER/haithem-test
+    # Install backend dependencies
+    - cd $DEPLOYPATH/backend && /opt/cpanel/ea-nodejs20/bin/npm install --production
+    # Generate Prisma client
+    - cd $DEPLOYPATH/backend && /opt/cpanel/ea-nodejs20/bin/npx prisma generate
+    # Build frontend (produces dist folder)
+    - cd $DEPLOYPATH/frontend && /opt/cpanel/ea-nodejs20/bin/npm install
+    - cd $DEPLOYPATH/frontend && /opt/cpanel/ea-nodejs20/bin/npm run build
+    # Copy frontend build to backend public folder (if serving from backend)
+    - cp -r $DEPLOYPATH/frontend/dist/* $DEPLOYPATH/backend/public/
+    # Restart Node.js application (touch tmp/restart.txt for Passenger)
+    - mkdir -p $DEPLOYPATH/tmp
+    - touch $DEPLOYPATH/tmp/restart.txt
