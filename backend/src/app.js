@@ -24,7 +24,7 @@ const FRONTEND_INDEX = path.join(PUBLIC_DIR, "index.html");
 // ===================
 
 // Structured Logging
-app.use(pinoHttp({ 
+app.use(pinoHttp({
   logger,
   serializers: {
     req: (req) => ({
@@ -35,24 +35,7 @@ app.use(pinoHttp({
   },
 }));
 
-// Security Headers
-app.use(helmet({
-  contentSecurityPolicy: isProduction ? undefined : false,
-  crossOriginEmbedderPolicy: false,
-}));
-
-// Rate Limiting
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000,
-  max: 1000,
-  standardHeaders: true,
-  legacyHeaders: false,
-  message: { error: "TooManyRequests", message: "Too many requests, please try again later." },
-  skip: (req) => !isProduction || req.path.startsWith("/assets"),
-});
-app.use("/api", limiter);
-
-// CORS
+// CORS - MUST BE BEFORE OTHER MIDDLEWARES
 const corsOptions = {
   origin(origin, callback) {
     if (!origin || config.isAllowedOrigin(origin)) {
@@ -67,6 +50,27 @@ const corsOptions = {
   optionsSuccessStatus: 204,
 };
 app.use(cors(corsOptions));
+
+// Handle preflight requests explicitly
+app.options("*", cors(corsOptions));
+
+// Security Headers
+app.use(helmet({
+  contentSecurityPolicy: isProduction ? undefined : false,
+  crossOriginEmbedderPolicy: false,
+  crossOriginResourcePolicy: { policy: "cross-origin" },
+}));
+
+// Rate Limiting
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 1000,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "TooManyRequests", message: "Too many requests, please try again later." },
+  skip: (req) => !isProduction || req.path.startsWith("/assets"),
+});
+app.use("/api", limiter);
 
 // Body parsing
 app.use(express.json({ limit: "50mb" }));
@@ -127,14 +131,14 @@ app.use("/uploads", express.static(config.UPLOADS_DIR));
 app.get("/health", async (req, res) => {
   const { prisma } = require("./lib/prisma");
   const { isDbUnavailable } = require("./utils/dbState");
-  
+
   const health = {
     status: "ok",
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
     db: !isDbUnavailable() ? "connected" : "disconnected",
   };
-  
+
   try {
     if (!isDbUnavailable()) await prisma.$queryRaw`SELECT 1`;
   } catch (e) {
@@ -196,7 +200,7 @@ app.use((err, req, res, next) => {
   res.status(status).json({
     error: err.name || "ServerError",
     message,
-    ...( !isProduction && { stack: err.stack }),
+    ...(!isProduction && { stack: err.stack }),
   });
 });
 

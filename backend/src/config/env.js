@@ -70,6 +70,7 @@ const DEFAULT_CORS_ORIGINS = [
   "http://localhost:5000",
   "https://rootsmaghreb.com",
   "https://www.rootsmaghreb.com",
+  "https://backend.rootsmaghreb.com",
 ];
 
 const normalizeOrigin = (origin) =>
